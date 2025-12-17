@@ -10,7 +10,7 @@ const ResultPage = () => {
     if (score !== undefined) {
       const user = JSON.parse(localStorage.getItem("user"));
 
-      fetch("http://localhost:5000/api/scores/add", {
+      fetch("https://quizotron-the-web-app-backend.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

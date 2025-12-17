@@ -1,4 +1,4 @@
-export const API_URL = "http://localhost:5000/api";
+export const API_URL = "https://quizotron-the-web-app-backend.onrender.com";
 
 // Helper function for GET requests
 export const getRequest = async (endpoint) => {

@@ -13,7 +13,7 @@ const QuizPage = () => {
   const [animateCorrect, setAnimateCorrect] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/quiz/${category}`)
+    fetch(`https://quizotron-the-web-app-backend.onrender.com${category}`)
       .then(res => res.json())
       .then(data => setQuestions(data));
   }, [category]);
