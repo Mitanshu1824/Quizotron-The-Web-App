@@ -7,7 +7,7 @@ const LoginPage = () => {
   const navigate = useNavigate();
 
   const handleLogin = async () => {
-    const res = await fetch("https://quizotron-the-web-app-backend.onrender.com", {
+    const res = await fetch("https://quizotron-the-web-app-backend.onrender.com/api/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password })

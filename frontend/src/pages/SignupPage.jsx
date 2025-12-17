@@ -12,7 +12,7 @@ const SignupPage = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleSignup = async () => {
-  const res = await fetch("https://quizotron-the-web-app-backend.onrender.com", {
+  const res = await fetch("https://quizotron-the-web-app-backend.onrender.com/api/auth/signup", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name, email, password })

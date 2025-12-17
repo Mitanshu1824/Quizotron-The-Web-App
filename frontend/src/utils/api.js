@@ -1,4 +1,4 @@
-export const API_URL = "https://quizotron-the-web-app-backend.onrender.com";
+export const API_URL = "https://quizotron-the-web-app-backend.onrender.com/api";
 
 // Helper function for GET requests
 export const getRequest = async (endpoint) => {
